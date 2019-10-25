@@ -57,7 +57,7 @@ void main() {
 			sprintf(filenum, "%d", numfiles);
 			char *filename = (char*)malloc(20);
 			strcpy(filename, filenum);
-			strcat(filename, ".gno");
+			strcat(filename, ".xno");
 			char *xnodat = (char*)malloc(fsize);
 			memcpy(xnodat, file + startpos, fsize);
 			FILE *outxno = fopen(filename, "wb");
